@@ -1,12 +1,32 @@
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
+
+body{
+    background-color: silver;
+}
+
+
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
 
 .container-grid{
     height: 100vh;
     display: grid;
-    gap: 10px;
     grid-template-columns: 15%;
     grid-template-rows: 7% auto 7%;
     grid-template-areas: 
@@ -17,25 +37,38 @@
 
 .navbar{
     grid-area: navbar;
-    background-color: blue;
     display: flex;
+    background-color:darkslateblue;
+    color: white;
     justify-content: center;
     align-items: center;
+    a{
+        color: white;
+    }
 }
 
 .aside-bar{
     grid-area: aside-bar;
-    background-color: gray;
+    background-color: white;
+    a{
+        color: black;
+        font-size: 14px;
+    }
+    span{
+        color: gray;
+        font-size: 14px;
+    }
 }
 
 .content{
     grid-area: content;
-    background-color: gray;
+    background-color: silver;
 }
 
 .footer{
     grid-area: footer;
-    background-color: white;
+    background-color: darkslateblue;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,6 +76,7 @@
 
 .flex{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .column{
@@ -50,16 +84,56 @@
 }
 
 .card{
+    margin: 2em;
     align-items: center;
     justify-content: center;
+    border: solid 2px black;
     img{
-        width: 30%;
+        width: 100%;
     }
 }
 
 .grid{
     display: grid;
-    gap: 10px;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
+}
+
+
+
+.i-center{
+    align-items: center;
+}
+.j-center{
+    justify-content: center;
+}
+.j-between{
+    justify-content: space-between;
+}
+.j-around{
+    justify-content: space-around;
+}
+.text-center{
+    text-align: center;
+}
+.text-start{
+    text-align: start;
+}
+
+
+.m-full{
+    margin: 2em;
+}
+.m{
+    margin: 0.5em;
+}
+.gap-1{
+    gap: 2em;
+}
+
+button{
+    background-color: darkslateblue;
+    color: white;
+    width: 100%;
+    height: 3em;
 }

@@ -3,66 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>My Ecommerce</title>
 </head>
-<body>
+<body class="poppins-regular">
     <div class="container-grid">
         <!-- NAVBAR -->
-        <div class="navbar">MY Ecommerce</div>
+        <div class="navbar flex j-around">
+            <p class="poppins-bold">LaFeria.com</p>
+            <div class="flex gap-1">
+                <a href="#">Categorias</a>
+                <a href="#">Reclamos</a>
+                <a href="#">Registro</a>
+            </div>
+            <div class="flex gap-1">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
         <!-- ASIDEBAR -->
-        <div class="aside-bar">
-            <div class="flex column">
-                <p>Categorias:</p>
-                <p>Perfumes (10)</p>
-                <p>Ropa (10)</p>
-                <p>Accesorios (10)</p>
-                <p>Zapatos (10)</p>
+        <div class="aside-bar m">
+            <div class="flex column m-full">
+                <p class="poppins-bold">Ropa de Hombre</p>
+                <br>
+                <p>Categorias</p>
+                <br>
+                <a href="#">Polerones <span>(4)</span></a>
+                <a href="#">Poleras <span>(10)</span></a>
+                <a href="#">Zapatos <span>(7)</span></a>
+                <a href="#">Gorras <span>(3)</span></a>
             </div>
         </div>
         <!-- CONTENT -->
-        <div class="content">
-            <div class="grid">
+        <div class="content flex column">
+            <div class="flex j-between">
                 <div class="card flex column">
                     <img src="./assets/img/poleron.jpg" alt="">
-                    <p>Poleron sherpa</p>
+                    <br>
+                    <p class="poppins-bold">Poleron sherpa</p>
                     <p>$29.990</p>
-                    <button>Comprar</button>
+                    <br>
+                    <button>Agregar al Carrito <i class="fa-solid fa-cart-shopping"></i></button>
                 </div>
                 <div class="card flex column">
                     <img src="./assets/img/poleron.jpg" alt="">
-                    <p>Poleron sherpa</p>
+                    <br>
+                    <p class="poppins-bold">Poleron sherpa</p>
                     <p>$29.990</p>
-                    <button>Comprar</button>
+                    <br>
+                    <button>Agregar al Carrito <i class="fa-solid fa-cart-shopping"></i></button>
                 </div>
                 <div class="card flex column">
                     <img src="./assets/img/poleron.jpg" alt="">
-                    <p>Poleron sherpa</p>
+                    <br>
+                    <p class="poppins-bold">Poleron sherpa</p>
                     <p>$29.990</p>
-                    <button>Comprar</button>
+                    <br>
+                    <button>Agregar al Carrito <i class="fa-solid fa-cart-shopping"></i></button>
                 </div>
+            </div>
+            <div class="flex j-between">
                 <div class="card flex column">
                     <img src="./assets/img/poleron.jpg" alt="">
-                    <p>Poleron sherpa</p>
+                    <br>
+                    <p class="poppins-bold">Poleron sherpa</p>
                     <p>$29.990</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="card flex column">
-                    <img src="./assets/img/poleron.jpg" alt="">
-                    <p>Poleron sherpa</p>
-                    <p>$29.990</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="card flex column">
-                    <img src="./assets/img/poleron.jpg" alt="">
-                    <p>Poleron sherpa</p>
-                    <p>$29.990</p>
-                    <button>Comprar</button>
+                    <br>
+                    <button>Agregar al Carrito <i class="fa-solid fa-cart-shopping"></i></button>
                 </div>
             </div>
         </div>
         <!-- FOOTER -->
-        <div class="footer">@ecommerce</div>
+        <div class="footer poppins-bold">@LaFeria.com</div>
     </div>
+
+    <script src="https://kit.fontawesome.com/ffa5565747.js" crossorigin="anonymous"></script>
 </body>
 </html>
