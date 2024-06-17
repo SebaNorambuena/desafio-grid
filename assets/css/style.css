@@ -9,6 +9,10 @@ body{
     background-color: silver;
 }
 
+img{
+    height: 255px;
+}
+
 
 
 .poppins-regular {
